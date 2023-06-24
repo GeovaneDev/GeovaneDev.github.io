@@ -1,12 +1,68 @@
-.body {
-    background-color: black;
-    color: white;
-}
-.category {
-    background-color: rgb(59, 59, 59);
-    color: white;
-}
-.color-gradient {
-    background: linear-gradient(to bottom right, rgb(92, 92, 92), rgb(19, 19, 19));
+body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
 
-}
+        .navbar {
+            background-color: #333333;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+        }
+
+        .nav-link {
+            color: #ffffff;
+        }
+
+        .nav-link:hover {
+            color: #ffffff;
+        }
+
+        header {
+            background: linear-gradient(#292929, #000000);
+        }
+
+        .lead {
+            color: #ffffff;
+        }
+
+        .card {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        .card-title {
+            color: #ffffff;
+        }
+
+        .card-text {
+            color: #ffffff;
+        }
+
+        .btn-primary {
+            background-color: #4d4d4d;
+            border-color: #4d4d4d;
+        }
+
+        .btn-primary:hover {
+            background-color: #666666;
+            border-color: #666666;
+        }
+
+        .btn-secondary {
+            background-color: #333333;
+            border-color: #4d4d4d;
+            color: #ffffff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #4d4d4d;
+            border-color: #666666;
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+        }
