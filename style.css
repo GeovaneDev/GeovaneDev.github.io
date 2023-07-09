@@ -1,54 +1,43 @@
-body.dark {
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
 }
-.navbar.dark {
-    background-color: #1a1a1a;
+
+.navbar {
+    background-color: #222;
 }
-.navbar-brand.dark {
-    color: #ffffff;
+
+header {
+    background: linear-gradient(to right, #222, #111);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
 }
-.nav-link.dark {
-    color: #ffffff;
+
+.project-card {
+    background-color: #333;
+    color: #fff;
+    transition: transform 0.3s;
 }
-.nav-link.dark:hover {
-    color: #ffffff;
+
+.project-card:hover {
+    transform: scale(1.05);
 }
-header.dark {
-    background: linear-gradient(#000000, #292929);
+
+.btn-primary,
+.btn-secondary {
+    transition: transform 0.3s;
 }
-.lead.dark {
-    color: #ffffff;
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-2px);
 }
-.card.dark {
-    background-color: #1a1a1a;
-    color: #ffffff;
-}
-.card-title.dark {
-    color: #ffffff;
-}
-.card-text.dark {
-    color: #ffffff;
-}
-.btn-primary.dark {
-    background-color: #4d4d4d;
-    border-color: #4d4d4d;
-}
-.btn-primary.dark:hover {
-    background-color: #666666;
-    border-color: #666666;
-}
-.btn-secondary.dark {
-    background-color: #1a1a1a;
-    border-color: #4d4d4d;
-    color: #ffffff;
-}
-.btn-secondary.dark:hover {
-    background-color: #4d4d4d;
-    border-color: #666666;
-    color: #ffffff;
-}
-footer.dark {
-    background-color: #000000;
-    color: #ffffff;
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
