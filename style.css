@@ -2,6 +2,8 @@ body {
     background-color: #222;
     color: #fff;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -18,21 +20,22 @@ header {
 .project-card {
     background-color: #333;
     color: #fff;
-    transition: transform 0.3s;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .project-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
 .btn-primary,
 .btn-secondary {
-    transition: transform 0.3s;
-}
-
-.btn-primary:hover,
-.btn-secondary:hover {
-    transform: translateY(-2px);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
 footer {
