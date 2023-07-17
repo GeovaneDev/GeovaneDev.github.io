@@ -1,4 +1,4 @@
-# Meu Site Pessoal e Portfólio de Projetos
+# Meu Site com meus Projetos
 
 Seja bem-vindo ao repositório do meu site pessoal, um espaço onde compartilho minha jornada como desenvolvedor e apresento meus projetos. Aqui você encontrará informações sobre mim, meus trabalhos anteriores e detalhes sobre os projetos em que estou trabalhando atualmente.
 
