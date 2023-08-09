@@ -6,45 +6,38 @@ body {
     padding: 0;
 }
 
-.navbar {
-    background-color: #222;
-}
-
-header {
-    background: linear-gradient(to right, #222, #111);
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.project-card {
-    background-color: #333;
-    color: #fff;
-    border-radius: 10px;
+.advantage-card {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
     padding: 20px;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+.advantage-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.btn-primary,
-.btn-secondary {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 10px;
-}
-
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.light-icon {
-    fill: #ffffff;
-}
+.typing {
+    overflow: hidden;
+    border-right: .10em solid rgb(255, 255, 255);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation: 
+      typing 3.5s steps(50, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255); }
+  }
