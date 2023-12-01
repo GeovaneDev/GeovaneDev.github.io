@@ -1,43 +1,68 @@
 body {
-    background-color: #222;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
 
-.advantage-card {
-    display: inline-block;
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+.navbar {
+  background-color: #000;
 }
 
-.advantage-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+.navbar-brand {
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa;
+}
+
+.card {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
 }
 
 .typing {
-    overflow: hidden;
-    border-right: .10em solid rgb(255, 255, 255);
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .10em;
-    animation: 
-      typing 3.5s steps(50, end),
-      blink-caret .75s step-end infinite;
+  overflow: hidden;
+  border-right: .10em solid transparent; /* Começa com uma borda transparente */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .10em;
+  max-width: 100%; /* Garante que o texto não ultrapasse a largura máxima */
+  display: inline-block; /* Adiciona a propriedade display inline-block */
+  animation: typing 3s steps(40) forwards, blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
   }
-  
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  to {
+      width: 100%;
   }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(255, 255, 255); }
+}
+
+@keyframes blink-caret {
+  from, to {
+      border-color: rgba(255, 255, 255, 0.7); /* Use uma cor mais suave para o cursor */
   }
+  50% {
+      border-color: transparent; /* Alterne entre transparente e a cor mais suave */
+  }
+}

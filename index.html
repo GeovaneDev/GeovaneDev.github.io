@@ -5,117 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeovaneDev</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <meta name="description" content="O site do desenvolvedor GeovaneDev, com seus projetos.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <body class="dark">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="/">GeovaneDev</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about"><i class="fas fa-info-circle me-1"></i> Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects"><i class="fas fa-code me-1"></i> Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/GeovaneDev" target="_blank"
-                                rel="noopener noreferrer" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                title="GitHub"><i class="fab fa-github me-1"></i> Github </a>
-                        </li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">GeovaneDev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-address-card"></i> Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-code"></i> Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-github"></i> Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about" class="bg-dark py-5">
+        <div class="container text-center">
+            <h1 class="display-4 animate__animated animate__fadeInDown typing">Projetos do Geovane</h1>
+            <p class="lead animate__animated animate__fadeInUp">Olá! Sou Geovane, um estudante e desenvolvedor iniciante de 16 anos. Abaixo você encontra alguns dos meus projetos públicos e OpenSource. Sinta-se à vontade para explorar e saber mais detalhes sobre cada um deles.</p>
+        </div>
+    </header>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">Projetos</h2>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col mb-4">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h3 class="card-title">Site para a Banda Little Dolly</h3>
+                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar e divulgar a banda.</p>
+                            <a href="https://littledolly.com.br/" class="btn btn-primary">Ver o site</a>
+                            <a href="https://github.com/bandalittledolly/Website" class="btn btn-secondary">Ver código</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-
-        <header id="about" class="bg-dark py-5">
-            <div class="container text-center">
-                <h1 class="display-4 animate__animated animate__fadeInDown typing">Projetos do Geovane</h1>
-                <p class="lead animate__animated animate__fadeInUp">Olá! Sou Geovane, um estudante e desenvolvedor
-                    iniciante de 15 anos. Abaixo você encontra alguns dos meus projetos públicos e OpenSource. Sinta-se à vontade para explorar e saber mais detalhes sobre cada um deles.</p>
-                    <p class="lead animate__animated animate__fadeInLeft">Caso queira ver o código fonte desse site <a href="https://github.com/GeovaneDev/GeovaneDev.github.io">Clique Aqui</a></p>
-            </div>
-        </header>
-
-        <section id="projects" class="py-5">
-            <div class="container">
-                <h2 class="mb-4 text-center">Projetos</h2>
-
-                <div class="row">
-                    <div class="col-md-4 mb-4 animate__animated animate__fadeInLeft">
-                        <div class="card project-card text-center bg-dark text-light advantage-card">
-                            <div class="card-body">
-                                <h3 class="card-title">Site para a Banda Little Dolly</h3>
-                                <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar e divulgar a banda.
-                                </p>
-                                <a href="https://github.com/bandalittledolly/Website" class="btn btn-primary">Ver detalhes</a>
-                                <a href="https://littledolly.com.br/" class="btn btn-secondary">Ver o site</a>
-                            </div>
+                <div class="col mb-4">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h3 class="card-title">Site do FlexTux</h3>
+                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar o FlexTux.</p>
+                            <a href="https://flextux.pages.dev" class="btn btn-primary">Ver o site</a>
+                            <a href="https://github.com/GeovaneDev/FlexTux-Website" class="btn btn-secondary">Ver código</a>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4 animate__animated animate__fadeInDown">
-                        <div class="card project-card text-center bg-dark text-light advantage-card">
-                            <div class="card-body">
-                                <h3 class="card-title">Site do FlexTux</h3>
-                                <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar o FlexTux.
-                                </p>
-                                <a href="https://github.com/GeovaneDev/FlexTux-Website" class="btn btn-primary">Ver
-                                    detalhes</a>
-                                <a href="https://flextux.pages.dev" class="btn btn-secondary">Ver o site</a>
-                            </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h3 class="card-title">FlexTux</h3>
+                            <p class="card-text">Um um bot para o Discord desenvolvido em JavaScript (<a href="https://discord.js.org/">Discord.js</a>).</p>
+                            <a href="https://flextux.pages.dev/invite" class="btn btn-primary">Adicionar o Bot</a>
+                            <a href="https://github.com/GeovaneDev/FlexTux" class="btn btn-secondary">Ver código</a>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4 animate__animated animate__fadeInLeft">
-                        <div class="card project-card text-center bg-dark text-light advantage-card">
-                            <div class="card-body">
-                                <h3 class="card-title">FlexTux</h3>
-                                <p class="card-text">Um um bot para o Discord desenvolvido em JavaScript (<a href="https://discord.js.org/">Discord.js</a>).
-                                </p>
-                                <a href="https://github.com/GeovaneDev/FlexTux" class="btn btn-primary">Ver
-                                    detalhes</a>
-                                <a href="https://flextux.pages.dev/invite" class="btn btn-secondary">Adicionar o Bot</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3 animate__animated animate__fadeInUp">
-                        <div class="card project-card text-center bg-dark text-light advantage-card">
-                            <div class="card-body">
-                                <h3 class="card-title">AutoClicker Simples</h3>
-                                <p class="card-text">Um AutoClicker desenvolvido em C++. (Descontinuado)
-                                </p>
-                                <a href="https://github.com/GeovaneDev/AutoClick" class="btn btn-primary">Ver
-                                    detalhes</a>
-                            </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h3 class="card-title">AutoClicker Simples</h3>
+                            <p class="card-text">Um AutoClicker desenvolvido em C++. (Descontinuado)</p>
+                            <a href="https://github.com/GeovaneDev/AutoClick" class="btn btn-primary">Ver código</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer class="bg-dark text-center py-3">
-            <div class="container">
-                <a href="https://github.com/GeovaneDev" target="_blank" rel="noopener noreferrer" class="text-light"><i
-                        class="fab fa-github me-1"></i> Github</a>
-            </div>
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-            crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/@popperjs/core@2"></script>
-        <script src="script.js"></script>
-    </body>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 <a href="https://github.com/GeovaneDev" class="text-white fw-bold">GeovaneDev</a>. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 
 </html>

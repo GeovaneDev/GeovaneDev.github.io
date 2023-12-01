@@ -9,7 +9,7 @@ O site está disponível em https://GeovaneDev.github.io/. Convido você a explo
 Este site foi desenvolvido utilizando tecnologias da web para criar uma experiência interativa e informativa. A seguir, estão os principais recursos e ferramentas utilizados na sua construção:
 
     HTML5: Linguagem de marcação utilizada para estruturar o conteúdo do site e criar uma base sólida.
-    CSS3: Linguagem de estilo utilizada para dar vida ao design do site, definindo o layout, cores, tipografia e animações.
+    CSS: Linguagem de estilo utilizada para dar vida ao design do site, definindo o layout, cores, tipografia e animações.
     Bootstrap: Framework CSS utilizado para agilizar o desenvolvimento e garantir um layout responsivo e estilizado.
     GitHub Pages: Plataforma de hospedagem gratuita que permite a publicação de sites estáticos diretamente a partir de repositórios do GitHub.
 
