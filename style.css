@@ -3,49 +3,41 @@ body {
   color: #fff;
   font-family: Arial, sans-serif;
 }
-
 .navbar {
   background-color: #000;
 }
-
 .navbar-brand {
   font-weight: bold;
   color: #fff;
 }
-
 .navbar-nav .nav-link {
   color: #fff;
 }
-
 .navbar-nav .nav-link:hover {
   color: #f8f9fa;
 }
-
 .card {
   background-color: #000;
   color: #fff;
   transition: all 0.3s ease-in-out;
   border: none;
 }
-
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
-
 footer {
   background-color: #000;
   color: #fff;
 }
-
 .typing {
   overflow: hidden;
-  border-right: .10em solid transparent; /* Começa com uma borda transparente */
+  border-right: .10em solid transparent;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .10em;
-  max-width: 100%; /* Garante que o texto não ultrapasse a largura máxima */
-  display: inline-block; /* Adiciona a propriedade display inline-block */
+  max-width: 100%;
+  display: inline-block;
   animation: typing 3s steps(40) forwards, blink-caret .75s step-end infinite;
 }
 
@@ -60,9 +52,9 @@ footer {
 
 @keyframes blink-caret {
   from, to {
-      border-color: rgba(255, 255, 255, 0.7); /* Use uma cor mais suave para o cursor */
+      border-color: rgba(255, 255, 255, 0.7);
   }
   50% {
-      border-color: transparent; /* Alterne entre transparente e a cor mais suave */
+      border-color: transparent;
   }
 }
