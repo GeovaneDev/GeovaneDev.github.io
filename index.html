@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeovaneDev</title>
-    <meta name="description" content="O site do desenvolvedor GeovaneDev, com seus projetos.">
+    <meta name="description" content="Portfólio de projetos self-hosted e desenvolvidos por GeovaneDev.">
     <meta name="robots" content="index, follow">
-    <meta name="keywords" content="GeovaneDev, desenvolvedor web, projetos, site, aplicativos web, desenvolvimento web">
+    <meta name="keywords" content="GeovaneDev, desenvolvedor web, projetos, self-hosted, portfólio">
     <meta name="author" content="GeovaneDev">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.5/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="/">GeovaneDev</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -33,6 +34,9 @@
                         <a class="nav-link" href="#projects"><i class="fas fa-code me-1"></i> Projetos</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#self-hosted"><i class="fas fa-server me-1"></i> Self-Hosted</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="https://github.com/GeovaneDev"><i class="fab fa-github me-1"></i>
                             Github</a>
                     </li>
@@ -41,22 +45,20 @@
         </div>
     </nav>
 
-    <header id="about" class="jumbotron bg-dark text-white text-center">
+    <header id="about" class="jumbotron text-white text-center">
         <div class="container">
-            <h1 class="animate__animated animate__fadeInDown">Projetos do Geovane</h1>
-            <p class="lead animate__animated animate__fadeInUp">Olá! Sou Geovane, um estudante e desenvolvedor
-                iniciante de 16 anos. Abaixo você encontra alguns dos meus projetos públicos e OpenSource. Sinta-se à
-                vontade para explorar e saber mais detalhes sobre cada um deles.</p>
+            <h1 class="animate__animated animate__fadeInDown">Sobre GeovaneDev</h1>
+            <p class="lead animate__animated animate__fadeInUp">Olá! Sou Geovane, um desenvolvedor web apaixonado por projetos self-hosted. Abaixo você encontrará alguns dos meus projetos, todos com o código-fonte disponível no GitHub.</p>
         </div>
     </header>
 
-    <section id="projects" class="py-5">
+    <section id="projects" class="py-5 bg-gray-900">
         <div class="container">
-            <h2 class="mb-4 text-center">Projetos</h2>
+            <h2 class="mb-4 text-center text-white">Meus Projetos</h2>
 
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div class="col mb-4">
-                    <div class="card project-card bg-dark text-white">
+                    <div class="card h-100 project-card">
                         <div class="card-body">
                             <h3 class="card-title">B3API</h3>
                             <p class="card-text">Uma API dedicada aos dados do mercado financeiro brasileiro (B3).</p>
@@ -66,41 +68,43 @@
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card project-card bg-dark text-white">
+                    <div class="card h-100 project-card">
                         <div class="card-body">
                             <h3 class="card-title">Site para a Banda Little Dolly</h3>
-                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar e divulgar a
-                                banda.</p>
+                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar e divulgar a banda.</p>
                             <a href="https://littledolly.com.br/" class="btn btn-primary">Ver o site</a>
-                            <a href="https://github.com/bandalittledolly/Website" class="btn btn-secondary">Ver
-                                código</a>
+                            <a href="https://github.com/bandalittledolly/Website" class="btn btn-secondary">Ver código</a>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card project-card bg-dark text-white">
+                    <div class="card h-100 project-card">
                         <div class="card-body">
                             <h3 class="card-title">Site do FlexTux</h3>
-                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar o FlexTux.
-                                (Descontinuado)</p>
+                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar o FlexTux. (Descontinuado)</p>
                             <a href="https://flextux.pages.dev" class="btn btn-primary">Ver o site</a>
-                            <a href="https://github.com/FlexTux/FlexTux-Website" class="btn btn-secondary">Ver
-                                código</a>
+                            <a href="https://github.com/FlexTux/FlexTux-Website" class="btn btn-secondary">Ver código</a>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card project-card bg-dark text-white">
+                    <div class="card h-100 project-card">
                         <div class="card-body">
                             <h3 class="card-title">FlexTux</h3>
-                            <p class="card-text">Um um bot para o Discord desenvolvido em JavaScript (<a
-                                    href="https://discord.js.org/">Discord.js</a>). (Descontinuado)</p>
+                            <p class="card-text">Um bot para o Discord desenvolvido em JavaScript (Discord.js). (Descontinuado)</p>
                             <a href="https://flextux.pages.dev/invite" class="btn btn-primary">Adicionar o Bot</a>
                             <a href="https://github.com/FlexTux/FlexTux" class="btn btn-secondary">Ver código</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="self-hosted" class="py-5 bg-gray-800">
+        <div class="container">
+            <h2 class="mb-4 text-center text-white">Self-Hosted</h2>
+            <p class="lead text-center text-white">Em desenvolvimento...</p>
         </div>
     </section>
 
@@ -111,9 +115,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
 </body>
 
