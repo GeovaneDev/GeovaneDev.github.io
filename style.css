@@ -1,58 +1,18 @@
 body {
   font-family: 'Roboto Mono', monospace;
-  background-color: #1e1e1e;
+  background: #080808;
   color: #ccc;
 }
 
 .navbar {
-  background-color: #212121;
-}
-
-.jumbotron {
-  background-color: #212121;
-  padding: 80px 0;
-  margin-bottom: 0;
-}
-
-.card {
-  background-color: #333;
-  color: #ccc;
-  border: 1px solid #212121;
-}
-
-.card-title {
-  color: #fff;
-}
-
-.btn-primary {
-  background-color: #4CAF50;
-  border-color: #4CAF50;
-}
-
-.btn-primary:hover {
-  background-color: #45a049;
-  border-color: #45a049;
-}
-
-.btn-secondary {
-  background-color: #555;
-  border-color: #555;
-}
-
-.btn-secondary:hover {
-  background-color: #4d4d4d;
-  border-color: #4d4d4d;
-}
-
-footer {
-  background-color: #212121;
-  color: #ccc;
-  padding: 20px 0;
+  background-color: #000 !important;
+  border-bottom: 1px solid #333;
 }
 
 .navbar-brand {
   font-size: 24px;
   font-weight: bold;
+  color: #28a745;
 }
 
 .navbar-nav .nav-link {
@@ -63,29 +23,143 @@ footer {
   color: #fff;
 }
 
-.jumbotron h1,
-.jumbotron p {
-  margin: 0;
+.jumbotron {
+  background-color: #000;
+  padding: 80px 0;
+  margin-bottom: 0;
+}
+
+.card {
+  background-color: #111;
+  color: #ccc;
+  border: 1px solid #333;
+}
+
+.card-title {
+  color: #28a745;
 }
 
 .project-card {
   transition: transform 0.3s;
+  border-radius: 10px;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 12px 20px -10px #28a745;
 }
 
-.project-card .btn {
-  transition: background-color 0.3s, border-color 0.3s;
+.btn-primary {
+  background-color: #28a745;
+  border-color: #28a745;
 }
 
-.project-card .btn:hover {
-  background-color: #45a049;
-  border-color: #45a049;
+.btn-primary:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #5a6268;
+}
+
+footer {
+  background-color: #080808;
+  color: #ccc;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+}
+
+.section-title {
+  color: #28a745;
+}
+
+.lead {
+  color: #ccc;/
 }
 
 .self-hosted-card {
-  background-color: #444;
+  background-color: #111;
   border: 1px solid #333;
+  color: #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.self-hosted-card p {
+  margin-bottom: 0;
+}
+
+.terminal {
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'Roboto Mono', monospace;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.terminal-header {
+  height: 20px;
+  background-color: #222;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  background-color: #d1d1d1;
+}
+
+.command {
+  margin: 10px 0;
+}
+
+.output-container {
+  position: relative;
+}
+
+.output {
+  margin-left: 20px;
+}
+
+.typing-indicator {
+  width: 8px;
+  height: 12px;
+  background-color: #28a745;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  animation: typing-animation 0.5s infinite alternate;
+}
+
+@keyframes typing-animation {
+  0% {
+      height: 12px;
+  }
+  100% {
+      height: 0;
+  }
+}
+
+@keyframes blink-animation {
+  to {
+      visibility: hidden;
+  }
 }
