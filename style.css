@@ -24,9 +24,50 @@ body {
 }
 
 .jumbotron {
-  background-color: #000;
-  padding: 80px 0;
+  background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+  padding: 100px 0;
   margin-bottom: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.container {
+  z-index: 2;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
 }
 
 .card {
@@ -84,18 +125,6 @@ footer {
   color: #ccc;
 }
 
-.self-hosted-card {
-  background-color: #111;
-  border: 1px solid #333;
-  color: #ccc;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.self-hosted-card p {
-  margin-bottom: 0;
-}
-
 .terminal {
   background-color: #000;
   color: #0f0;
@@ -123,7 +152,18 @@ footer {
   border-radius: 50%;
   display: inline-block;
   margin-right: 5px;
-  background-color: #d1d1d1;
+}
+
+.close {
+  background-color: #ff5f56;
+}
+
+.minimize {
+  background-color: #ffbd2e;
+}
+
+.maximize {
+  background-color: #27c93f;
 }
 
 .command {

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/">GeovaneDev</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -35,27 +35,31 @@
                         <a class="nav-link" href="#self-hosted"><i class="fas fa-server me-1"></i> Self-Hosted</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/GeovaneDev"><i class="fab fa-github me-1"></i>
-                            Github</a>
+                        <a class="nav-link" href="https://github.com/GeovaneDev"><i class="fab fa-github me-1"></i> Github</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header id="about" class="jumbotron text-white text-center">
+    <header id="about" class="jumbotron text-white text-center d-flex align-items-center justify-content-center position-relative">
+        <div class="background-overlay"></div>
         <div class="container">
             <h1 class="animate__animated animate__fadeInDown">GeovaneDev</h1>
-            <p class="lead animate__animated animate__fadeInUp">Olá! Sou Geovane, um desenvolvedor web apaixonado por
-                projetos Open-Source e Self-Hosted. Abaixo você encontrará alguns dos meus projetos, todos com o código-fonte
-                disponível no GitHub.</p>
+            <p class="lead animate__animated animate__fadeInUp">Olá! Sou Geovane, um desenvolvedor web apaixonado por projetos Open-Source e Self-Hosted. Abaixo você encontrará alguns dos meus projetos, todos com o código-fonte disponível no GitHub.</p>
+            <div class="social-icons mt-4">
+                <a href="https://github.com/GeovaneDev" class="text-white me-3"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+            <a href="#projects" class="btn btn-primary mt-4 animate__animated animate__fadeInUp">Veja meus projetos</a>
+        </div>
+        <div class="scroll-indicator text-white animate__animated animate__fadeInDown">
+            <i class="fas fa-angle-double-down fa-2x"></i>
         </div>
     </header>
 
     <section id="projects" class="py-5 bg-dark">
         <div class="container">
             <h2 class="mb-4 text-center section-title">Meus Projetos</h2>
-
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col mb-4">
                     <div class="card h-100 project-card">
@@ -71,11 +75,9 @@
                     <div class="card h-100 project-card">
                         <div class="card-body">
                             <h3 class="card-title">Site para a Banda Little Dolly</h3>
-                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar e divulgar a
-                                banda.</p>
+                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar e divulgar a banda.</p>
                             <a href="https://littledolly.com.br/" class="btn btn-primary">Ver o site</a>
-                            <a href="https://github.com/bandalittledolly/Website" class="btn btn-secondary">Ver
-                                código</a>
+                            <a href="https://github.com/bandalittledolly/Website" class="btn btn-secondary">Ver código</a>
                         </div>
                     </div>
                 </div>
@@ -83,10 +85,8 @@
                     <div class="card h-100 project-card">
                         <div class="card-body">
                             <h3 class="card-title">Site do FlexTux</h3>
-                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar o FlexTux.
-                                (Descontinuado)</p>
-                            <a href="https://github.com/FlexTux/FlexTux-Website" class="btn btn-primary">Ver
-                                código</a>
+                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar o FlexTux. (Descontinuado)</p>
+                            <a href="https://github.com/FlexTux/FlexTux-Website" class="btn btn-primary">Ver código</a>
                         </div>
                     </div>
                 </div>
@@ -94,8 +94,7 @@
                     <div class="card h-100 project-card">
                         <div class="card-body">
                             <h3 class="card-title">FlexTux</h3>
-                            <p class="card-text">Um bot para o Discord desenvolvido em JavaScript (Discord.js).
-                                (Descontinuado)</p>
+                            <p class="card-text">Um bot para o Discord desenvolvido em JavaScript (Discord.js). (Descontinuado)</p>
                             <a href="https://github.com/FlexTux/FlexTux" class="btn btn-primary">Ver código</a>
                         </div>
                     </div>
@@ -128,8 +127,7 @@
 
     <footer class="text-white text-center py-4 footer">
         <div class="container">
-            <p>&copy; 2024 <a href="https://github.com/GeovaneDev" class="fw-bold text-white">GeovaneDev</a>. Todos os
-                direitos reservados.</p>
+            <p>&copy; 2024 <a href="https://github.com/GeovaneDev" class="fw-bold text-white">GeovaneDev</a>. Todos os direitos reservados.</p>
         </div>
     </footer>
 
