@@ -1,72 +1,58 @@
 body {
   font-family: 'Roboto Mono', monospace;
-  background: #080808;
+  background: linear-gradient(to bottom, #080808, #111);
   color: #ccc;
 }
 
 .navbar {
-  background-color: #000 !important;
-  border-bottom: 1px solid #333;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #28a745;
 }
 
 .navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-  color: #28a745;
+  font-size: 28px;
+  text-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
 }
 
-.navbar-nav .nav-link {
-  color: #ccc;
+.nav-link {
+  position: relative;
+  transition: color 0.3s;
 }
 
-.nav-link:hover {
-  color: #fff;
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #28a745;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 .jumbotron {
-  background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
-  padding: 100px 0;
+  background-color: #000;
+  padding: 80px 0;
   margin-bottom: 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
 }
 
-.background-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
+.jumbotron h1 {
+  font-size: 4rem;
+  text-shadow: 0 0 20px rgba(40, 167, 69, 0.7);
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
-.container {
-  z-index: 2;
-}
-
-.social-icons a {
-  margin: 0 10px;
-}
-
-.scroll-indicator {
-  position: absolute;
-  bottom: 20px;
-  z-index: 2;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-      transform: translateY(0);
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px rgba(40, 167, 69, 0.7);
   }
-  50% {
-      transform: translateY(-10px);
+  to {
+    text-shadow: 0 0 30px rgba(40, 167, 69, 1), 0 0 40px rgba(40, 167, 69, 0.8);
   }
 }
 
@@ -77,17 +63,19 @@ body {
 }
 
 .card-title {
-  color: #28a745;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .project-card {
-  transition: transform 0.3s;
-  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px -10px #28a745;
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px -10px rgba(40, 167, 69, 0.4);
 }
 
 .btn-primary {
@@ -111,96 +99,136 @@ body {
 }
 
 footer {
-  background-color: #080808;
-  color: #ccc;
-  padding: 20px 0;
-  border-top: 1px solid #333;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid #28a745;
+}
+
+footer a {
+  color: #28a745;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .section-title {
-  color: #28a745;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: #28a745;
 }
 
 .lead {
   color: #ccc;
 }
 
-.terminal {
-  background-color: #000;
-  color: #0f0;
-  border-radius: 10px;
+.self-hosted-card {
+  background-color: #111;
+  border: 1px solid #333;
+  color: #ccc;
   padding: 20px;
+  border-radius: 10px;
+}
+
+.self-hosted-card p {
+  margin-bottom: 0;
+}
+
+.terminal {
+  background-color: #0c0c0c;
+  border: 1px solid #28a745;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(40, 167, 69, 0.3);
   font-family: 'Roboto Mono', monospace;
+  margin-bottom: 30px;
   overflow: hidden;
-  position: relative;
-  width: 80%;
-  margin: auto;
 }
 
 .terminal-header {
-  height: 20px;
-  background-color: #222;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-color: #1e1e1e;
+  padding: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .button {
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
-.close {
+.button.close {
   background-color: #ff5f56;
 }
 
-.minimize {
+.button.minimize {
   background-color: #ffbd2e;
 }
 
-.maximize {
+.button.maximize {
   background-color: #27c93f;
 }
 
+.terminal-body {
+  padding: 20px;
+}
+
 .command {
-  margin: 10px 0;
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.output {
+  color: #ccc;
+  margin-bottom: 10px;
 }
 
 .output-container {
   position: relative;
-}
-
-.output {
-  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .typing-indicator {
-  width: 8px;
-  height: 12px;
-  background-color: #0f0;
+  width: 10px;
+  height: 20px;
+  background-color: #28a745;
   display: inline-block;
-  position: absolute;
-  top: 10px;
-  left: 0;
-  animation: typing-animation 1s infinite alternate;
-}
-
-@keyframes typing-animation {
-  0% {
-      height: 12px;
-  }
-
-  100% {
-      height: 0;
-  }
+  animation: blink-animation 0.7s steps(2, start) infinite;
 }
 
 @keyframes blink-animation {
   to {
-      visibility: hidden;
+    visibility: hidden;
   }
+}
+
+.service-link {
+  color: #28a745;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.service-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
 }

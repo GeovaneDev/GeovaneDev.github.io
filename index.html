@@ -4,19 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeovaneDev</title>
-    <meta name="description" content="Portfólio de projetos self-hosted e desenvolvidos por GeovaneDev.">
+    <title>GeovaneDev - Desenvolvedor Web | Projetos Self-Hosted e Open-Source</title>
+    <meta name="description" content="Portfólio de Geovane, desenvolvedor web especializado em projetos self-hosted e open-source. Conheça meus trabalhos e habilidades em desenvolvimento web.">
     <meta name="robots" content="index, follow">
-    <meta name="keywords" content="GeovaneDev, desenvolvedor web, projetos, self-hosted, portfólio">
-    <meta name="author" content="GeovaneDev">
+    <meta name="keywords" content="GeovaneDev, desenvolvedor web, projetos self-hosted, open-source, portfólio, desenvolvimento web, programação">
+    <meta name="author" content="Geovane">
+    <link rel="canonical" href="https://geovanedev.me/">
+    <meta property="og:title" content="GeovaneDev - Desenvolvedor Web | Projetos Self-Hosted e Open-Source">
+    <meta property="og:description" content="Portfólio de Geovane, desenvolvedor web especializado em projetos self-hosted e open-source. Conheça meus trabalhos e habilidades em desenvolvimento web.">
+    <meta property="og:url" content="https://geovanedev.me/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://geovanedev.me/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GeovaneDev - Desenvolvedor Web | Projetos Self-Hosted e Open-Source">
+    <meta name="twitter:description" content="Portfólio de Geovane, desenvolvedor web especializado em projetos self-hosted e open-source. Conheça meus trabalhos e habilidades em desenvolvimento web.">
+    <meta name="twitter:image" content="https://geovanedev.me/twitter-image.jpg">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Geovane",
+      "url": "https://geovanedev.me/",
+      "sameAs": [
+        "https://github.com/GeovaneDev",
+        "https://geovanedev.github.io/"
+      ],
+      "jobTitle": "Desenvolvedor Web",
+      "description": "Desenvolvedor web especializado em projetos self-hosted e open-source"
+    }
+    </script>
+    <link rel="alternate" href="https://geovanedev.github.io/" hreflang="pt-br">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="/">GeovaneDev</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -26,7 +54,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about"><i class="far fa-address-card me-1"></i> Sobre</a>
+                        <a class="nav-link" href="#about"><i class="fas fa-user-secret me-1"></i> Sobre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects"><i class="fas fa-code me-1"></i> Projetos</a>
@@ -35,67 +63,69 @@
                         <a class="nav-link" href="#self-hosted"><i class="fas fa-server me-1"></i> Self-Hosted</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/GeovaneDev"><i class="fab fa-github me-1"></i> Github</a>
+                        <a class="nav-link" href="https://github.com/GeovaneDev"><i class="fab fa-github me-1"></i>
+                            Github</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header id="about" class="jumbotron text-white text-center d-flex align-items-center justify-content-center position-relative">
-        <div class="background-overlay"></div>
+    <header id="about" class="jumbotron text-center py-5">
         <div class="container">
-            <h1 class="animate__animated animate__fadeInDown">GeovaneDev</h1>
-            <p class="lead animate__animated animate__fadeInUp">Olá! Sou Geovane, um desenvolvedor web apaixonado por projetos Open-Source e Self-Hosted. Abaixo você encontrará alguns dos meus projetos, todos com o código-fonte disponível no GitHub.</p>
-            <div class="social-icons mt-4">
-                <a href="https://github.com/GeovaneDev" class="text-white me-3"><i class="fab fa-github fa-2x"></i></a>
-            </div>
-            <a href="#projects" class="btn btn-primary mt-4 animate__animated animate__fadeInUp">Veja meus projetos</a>
-        </div>
-        <div class="scroll-indicator text-white animate__animated animate__fadeInDown">
-            <i class="fas fa-angle-double-down fa-2x"></i>
+            <h1 class="glitch animate__animated animate__fadeIn" data-text="GeovaneDev">GeovaneDev</h1>
+            <p class="lead typewriter animate__animated animate__fadeIn animate__delay-1s">Olá! Sou Geovane, um
+                desenvolvedor web apaixonado por
+                projetos Open-Source e Self-Hosted.</p>
         </div>
     </header>
 
-    <section id="projects" class="py-5 bg-dark">
+    <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="mb-4 text-center section-title">Meus Projetos</h2>
+            <h2 class="mb-4 text-center section-title glitch" data-text="Meus Projetos">Meus Projetos</h2>
+
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col mb-4">
-                    <div class="card h-100 project-card">
+                    <div class="card h-100 project-card animate__animated animate__fadeInUp">
                         <div class="card-body">
                             <h3 class="card-title">B3API</h3>
                             <p class="card-text">Uma API dedicada aos dados do mercado financeiro brasileiro (B3).</p>
-                            <a href="https://b3api.me" class="btn btn-primary">Ver o site</a>
-                            <a href="https://github.com/GeovaneDev/B3API" class="btn btn-secondary">Ver código</a>
+                            <a href="https://b3api.me" class="btn btn-outline-primary">Ver o site</a>
+                            <a href="https://github.com/GeovaneDev/B3API" class="btn btn-outline-secondary">Ver
+                                código</a>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card h-100 project-card">
+                    <div class="card h-100 project-card animate__animated animate__fadeInUp">
                         <div class="card-body">
                             <h3 class="card-title">Site para a Banda Little Dolly</h3>
-                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar e divulgar a banda.</p>
-                            <a href="https://littledolly.com.br/" class="btn btn-primary">Ver o site</a>
-                            <a href="https://github.com/bandalittledolly/Website" class="btn btn-secondary">Ver código</a>
+                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar e divulgar a
+                                banda.</p>
+                            <a href="https://littledolly.com.br/" class="btn btn-outline-primary">Ver o site</a>
+                            <a href="https://github.com/bandalittledolly/Website" class="btn btn-outline-secondary">Ver
+                                código</a>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card h-100 project-card">
+                    <div class="card h-100 project-card animate__animated animate__fadeInUp">
                         <div class="card-body">
                             <h3 class="card-title">Site do FlexTux</h3>
-                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar o FlexTux. (Descontinuado)</p>
-                            <a href="https://github.com/FlexTux/FlexTux-Website" class="btn btn-primary">Ver código</a>
+                            <p class="card-text">Um site desenvolvido usando HTML e CSS para apresentar o FlexTux.
+                                (Descontinuado)</p>
+                            <a href="https://github.com/FlexTux/FlexTux-Website" class="btn btn-outline-primary">Ver
+                                código</a>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card h-100 project-card">
+                    <div class="card h-100 project-card animate__animated animate__fadeInUp">
                         <div class="card-body">
                             <h3 class="card-title">FlexTux</h3>
-                            <p class="card-text">Um bot para o Discord desenvolvido em JavaScript (Discord.js). (Descontinuado)</p>
-                            <a href="https://github.com/FlexTux/FlexTux" class="btn btn-primary">Ver código</a>
+                            <p class="card-text">Um bot para o Discord desenvolvido em JavaScript (Discord.js).
+                                (Descontinuado)</p>
+                            <a href="https://github.com/FlexTux/FlexTux" class="btn btn-outline-primary">Ver código</a>
                         </div>
                     </div>
                 </div>
@@ -103,21 +133,23 @@
         </div>
     </section>
 
-    <section id="self-hosted" class="py-5 bg-dark">
+    <section id="self-hosted" class="py-5">
         <div class="container">
-            <hr class="my-5">
-            <h2 class="mb-4 text-center section-title">Self-Hosted</h2>
-            <div class="terminal">
+            <h2 class="mb-4 text-center section-title glitch" data-text="Self-Hosted">Self-Hosted</h2>
+            <div class="terminal animate__animated animate__fadeIn animate__delay-1s">
                 <div class="terminal-header">
                     <div class="button close"></div>
                     <div class="button minimize"></div>
                     <div class="button maximize"></div>
                 </div>
                 <div class="terminal-body">
-                    <p class="command">root@geovanedev.me:~$ ./build.sh</p>
-                    <p class="output">Novos projetos em breve.</p>
+                    <p class="command">root@geovanedev.me:~$ ls -l /services</p>
+                    <p class="output">total 1</p>
+                    <p class="output">drwxr-xr-x 2 root root 4096 Apr 10 10:00 <a href="https://piped.geovanedev.me" target="_blank" class="service-link">piped</a></p>
+                    <p class="command">root@geovanedev.me:~$ cat /services/piped/description.txt</p>
+                    <p class="output">Piped é uma alternativa privada e sem anúncios ao YouTube, oferecendo uma experiência de visualização mais limpa e respeitosa à privacidade.</p>
                     <div class="output-container">
-                        <p class="output">Building...</p>
+                        <p class="output">Aguardando novos serviços...</p>
                         <div class="typing-indicator"></div>
                     </div>
                 </div>
@@ -125,14 +157,53 @@
         </div>
     </section>
 
-    <footer class="text-white text-center py-4 footer">
+    <footer class="text-center py-4 footer">
         <div class="container">
-            <p>&copy; 2024 <a href="https://github.com/GeovaneDev" class="fw-bold text-white">GeovaneDev</a>. Todos os direitos reservados.</p>
+            <p>&copy; 2024 <a href="https://github.com/GeovaneDev" class="fw-bold text-white">GeovaneDev</a>. Todos os
+                direitos reservados.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        // Adicione efeitos de glitch e digitação aqui
+        function glitchEffect() {
+            const glitchElements = document.querySelectorAll('.glitch');
+            glitchElements.forEach(element => {
+                setInterval(() => {
+                    element.classList.add('active');
+                    setTimeout(() => {
+                        element.classList.remove('active');
+                    }, 200);
+                }, 3000);
+            });
+        }
+
+        function typewriterEffect() {
+            const typewriterElements = document.querySelectorAll('.typewriter');
+            typewriterElements.forEach(element => {
+                const text = element.textContent;
+                element.textContent = '';
+                let i = 0;
+                const typing = setInterval(() => {
+                    if (i < text.length) {
+                        element.textContent += text.charAt(i);
+                        i++;
+                    } else {
+                        clearInterval(typing);
+                    }
+                }, 50);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            glitchEffect();
+            typewriterEffect();
+            new WOW().init();
+        });
+    </script>
 </body>
 
 </html>
