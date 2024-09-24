@@ -136,21 +136,14 @@
     <section id="self-hosted" class="py-5">
         <div class="container">
             <h2 class="mb-4 text-center section-title glitch" data-text="Self-Hosted">Self-Hosted</h2>
-            <div class="terminal animate__animated animate__fadeIn animate__delay-1s">
-                <div class="terminal-header">
-                    <div class="button close"></div>
-                    <div class="button minimize"></div>
-                    <div class="button maximize"></div>
-                </div>
-                <div class="terminal-body">
-                    <p class="command">root@geovanedev.me:~$ ls -l /services</p>
-                    <p class="output">total 1</p>
-                    <p class="output">drwxr-xr-x 2 root root 4096 Apr 10 10:00 <a href="https://piped.geovanedev.me" target="_blank" class="service-link">piped</a></p>
-                    <p class="command">root@geovanedev.me:~$ cat /services/piped/description.txt</p>
-                    <p class="output">Piped é uma alternativa privada e sem anúncios ao YouTube, oferecendo uma experiência de visualização mais limpa e respeitosa à privacidade.</p>
-                    <div class="output-container">
-                        <p class="output">Aguardando novos serviços...</p>
-                        <div class="typing-indicator"></div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col mb-4">
+                    <div class="card h-100 project-card animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h3 class="card-title">Piped</h3>
+                            <p class="card-text">Piped é uma alternativa privada e sem anúncios ao YouTube, oferecendo uma experiência de visualização mais limpa e respeitosa à privacidade.</p>
+                            <a href="https://piped.geovanedev.me" class="btn btn-outline-primary">Ver o site</a>
+                        </div>
                     </div>
                 </div>
             </div>
