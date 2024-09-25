@@ -1,234 +1,51 @@
 body {
-  font-family: 'Roboto Mono', monospace;
-  background: linear-gradient(to bottom, #080808, #111);
-  color: #ccc;
+  font-family: 'Fira Code', monospace;
+  background-color: #0a0a0a;
+  color: #e0e0e0;
 }
-
-.navbar {
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #28a745;
+.neon-text {
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00;
 }
-
-.navbar-brand {
-  font-size: 28px;
-  text-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+.project-card {
+  background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+  border: 1px solid #333;
+  transition: all 0.3s ease;
 }
-
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 0, 0.2);
+}
+.btn-neon {
+  background-color: transparent;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  transition: all 0.3s ease;
+}
+.btn-neon:hover {
+  background-color: #00ff00;
+  color: #0a0a0a;
+  box-shadow: 0 0 10px #00ff00;
+}
 .nav-link {
   position: relative;
-  transition: color 0.3s;
+  overflow: hidden;
 }
-
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: -5px;
+  bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #28a745;
-  transition: width 0.3s;
+  background-color: #00ff00;
+  transition: width 0.3s ease;
 }
-
 .nav-link:hover::after {
   width: 100%;
 }
-
-.jumbotron {
-  background-color: #000;
-  padding: 80px 0;
-  margin-bottom: 0;
+.icon-spin {
+  transition: transform 0.3s ease;
 }
-
-.jumbotron h1 {
-  font-size: 4rem;
-  text-shadow: 0 0 20px rgba(40, 167, 69, 0.7);
-  animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 20px rgba(40, 167, 69, 0.7);
-  }
-  to {
-    text-shadow: 0 0 30px rgba(40, 167, 69, 1), 0 0 40px rgba(40, 167, 69, 0.8);
-  }
-}
-
-.card {
-  background-color: #111;
-  color: #ccc;
-  border: 1px solid #333;
-}
-
-.card-title {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-}
-
-.project-card {
-  transition: transform 0.3s, box-shadow 0.3s;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.project-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 15px 30px -10px rgba(40, 167, 69, 0.4);
-}
-
-.btn-primary {
-  background-color: #28a745;
-  border-color: #28a745;
-}
-
-.btn-primary:hover {
-  background-color: #218838;
-  border-color: #218838;
-}
-
-.btn-secondary {
-  background-color: #6c757d;
-  border-color: #6c757d;
-}
-
-.btn-secondary:hover {
-  background-color: #5a6268;
-  border-color: #5a6268;
-}
-
-footer {
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-  border-top: 1px solid #28a745;
-}
-
-footer a {
-  color: #28a745;
-  transition: color 0.3s;
-}
-
-footer a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-.section-title {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 10px;
-}
-
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50%;
-  height: 2px;
-  background-color: #28a745;
-}
-
-.lead {
-  color: #ccc;
-}
-
-.self-hosted-card {
-  background-color: #111;
-  border: 1px solid #333;
-  color: #ccc;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.self-hosted-card p {
-  margin-bottom: 0;
-}
-
-.terminal {
-  background-color: #0c0c0c;
-  border: 1px solid #28a745;
-  border-radius: 10px;
-  box-shadow: 0 0 30px rgba(40, 167, 69, 0.3);
-  font-family: 'Roboto Mono', monospace;
-  margin-bottom: 30px;
-  overflow: hidden;
-}
-
-.terminal-header {
-  background-color: #1e1e1e;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.button {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 8px;
-}
-
-.button.close {
-  background-color: #ff5f56;
-}
-
-.button.minimize {
-  background-color: #ffbd2e;
-}
-
-.button.maximize {
-  background-color: #27c93f;
-}
-
-.terminal-body {
-  padding: 20px;
-}
-
-.command {
-  color: #28a745;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.output {
-  color: #ccc;
-  margin-bottom: 10px;
-}
-
-.output-container {
-  position: relative;
-  margin-top: 20px;
-}
-
-.typing-indicator {
-  width: 10px;
-  height: 20px;
-  background-color: #28a745;
-  display: inline-block;
-  animation: blink-animation 0.7s steps(2, start) infinite;
-}
-
-@keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
-.service-link {
-  color: #28a745;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.service-link:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
-html {
-  scroll-behavior: smooth;
+.btn-neon:hover .icon-spin {
+  transform: rotate(360deg);
 }

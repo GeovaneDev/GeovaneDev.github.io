@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório do meu site pessoal, um espaço dedicado a compartilhar minha jornada como desenvolvedor e apresentar meus projetos. Aqui você encontrará informações detalhadas sobre minha trajetória, experiências profissionais e os projetos nos quais estou atualmente envolvido.
 
-Você pode acessar o site em https://GeovaneDev.github.io/. Convido você a explorar as diversas seções para conhecer mais sobre minha experiência e projetos como estudante de programação.
+Você pode acessar o site em https://geovanedev.me/. Convido você a explorar as diversas seções para conhecer mais sobre minha experiência e projetos como estudante de programação.
 
 ## Sobre o Site
 
