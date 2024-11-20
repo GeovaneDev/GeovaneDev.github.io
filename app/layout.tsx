@@ -9,8 +9,8 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "GeovaneSec - Desenvolvedor Web | Projetos Self-Hosted e Open-Source",
-  description: "Portfólio profissional de Geovane, desenvolvedor web especializado em projetos self-hosted e open-source. Conheça meus projetos, habilidades técnicas e experiência em desenvolvimento web seguro.",
+  title: "GeovaneSec - Desenvolvedor Web | Projetos Open-Source",
+  description: "Portfólio profissional de Geovane, desenvolvedor web especializado em projetos self-hosted e open-source. Conheça meus projetos e experiência em desenvolvimento web seguro.",
   keywords: "desenvolvedor web, self-hosted, open-source, portfolio, programação, desenvolvimento, segurança, full-stack, frontend, backend, DevOps, cybersecurity",
   authors: [{ name: "GeovaneSec", url: "https://github.com/GeovaneSec" }],
   creator: "GeovaneSec",
