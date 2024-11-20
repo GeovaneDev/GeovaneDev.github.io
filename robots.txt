@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-
-User-agent: ia_archiver
-Disallow: /
-
-Sitemap: https://geovanedev.me/sitemap.xml
