@@ -26,47 +26,49 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className="fixed w-full bg-[#0a0a0a]/95 backdrop-blur-xl text-[#e0e0e0] shadow-2xl z-50 border-b border-gray-800/30">
+        <nav className="fixed w-full bg-gradient-to-b from-[#0a0a0a]/95 to-[#111827]/95 backdrop-blur-xl text-[#e0e0e0] shadow-lg z-50 border-b border-gray-800/30">
             <div className="container mx-auto px-6">
                 <div className="flex justify-between items-center h-20">
-                    <a href="/" className="text-2xl font-bold hover:text-cyan-400 transition-all duration-300 flex items-center">
-                        <span className="tracking-wide bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">GeovaneSec</span>
+                    <a href="/" className="text-2xl font-bold transition-all duration-300 flex items-center group">
+                        <span className="tracking-wide bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-500 text-transparent bg-clip-text group-hover:from-cyan-400 group-hover:via-blue-500 group-hover:to-purple-600 transform group-hover:scale-105 transition-all duration-300">GeovaneSec</span>
                     </a>
 
-                    <div className="hidden md:flex items-center space-x-10">
-                        <a href="/" className="nav-link group flex flex-col items-center">
-                            <div className="flex items-center">
-                                <FontAwesomeIcon icon={faHome} className="mr-2 w-[1em] h-[1em]" />
+                    <div className="hidden md:flex items-center space-x-8">
+                        <a href="/" className="nav-link group px-4 py-2 rounded-xl hover:bg-gradient-to-r hover:from-cyan-500/5 hover:to-blue-500/5 transition-all duration-300">
+                            <div className="flex items-center space-x-2 text-gray-300 group-hover:text-cyan-400">
+                                <FontAwesomeIcon icon={faHome} className="w-4 h-4 transform group-hover:scale-110 transition-transform duration-300" />
                                 <span className="font-medium">Home</span>
                             </div>
-                            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500"></span>
+                            <div className="mt-1 h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300"></div>
                         </a>
-                        <a href="#projects" className="nav-link group flex flex-col items-center">
-                            <div className="flex items-center">
-                                <FontAwesomeIcon icon={faProjectDiagram} className="mr-2 w-[1em] h-[1em]" />
-                                <span className="font-medium">Projects</span>
+                        <a href="#projects" className="nav-link group px-4 py-2 rounded-xl hover:bg-gradient-to-r hover:from-cyan-500/5 hover:to-blue-500/5 transition-all duration-300">
+                            <div className="flex items-center space-x-2 text-gray-300 group-hover:text-cyan-400">
+                                <FontAwesomeIcon icon={faProjectDiagram} className="w-4 h-4 transform group-hover:scale-110 transition-transform duration-300" />
+                                <span className="font-medium">Projetos</span>
                             </div>
-                            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500"></span>
+                            <div className="mt-1 h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300"></div>
                         </a>
-                        <a href="https://github.com/GeovaneSec" className="nav-link group flex flex-col items-center">
-                            <div className="flex items-center">
-                                <FontAwesomeIcon icon={faGithub} className="mr-2 w-[1em] h-[1em]" />
-                                <span className="font-medium">GitHub</span>
-                            </div>
-                            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500"></span>
+                        <a 
+                            href="https://github.com/GeovaneSec" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-6 py-2.5 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 hover:from-cyan-500/20 hover:to-blue-500/20 border border-cyan-500/20 hover:border-cyan-400 rounded-xl font-medium text-gray-300 hover:text-white transition-all duration-300 flex items-center space-x-2 group shadow-lg hover:shadow-cyan-500/25"
+                        >
+                            <FontAwesomeIcon icon={faGithub} className="w-4 h-4 transform group-hover:scale-110 transition-transform duration-300" />
+                            <span>GitHub</span>
                         </a>
                     </div>
 
                     <button 
                         ref={buttonRef}
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        className="md:hidden w-12 h-12 flex items-center justify-center rounded-xl bg-gray-800/80 hover:bg-cyan-400/20 transition-all duration-300 border border-gray-700/30"
+                        className="md:hidden w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-r from-cyan-500/10 to-blue-500/10 hover:from-cyan-500/20 hover:to-blue-500/20 transition-all duration-300 border border-cyan-500/20 hover:border-cyan-400 shadow-lg hover:shadow-cyan-500/25"
                         aria-label="Toggle menu"
                     >
                         <FontAwesomeIcon 
                             icon={isMobileMenuOpen ? faTimes : faBars}
-                            className={`w-5 h-5 transition-all duration-300 ${
-                                isMobileMenuOpen ? 'rotate-180 text-cyan-400' : 'rotate-0'
+                            className={`w-4 h-4 transition-all duration-300 ${
+                                isMobileMenuOpen ? 'rotate-180 text-cyan-400' : 'rotate-0 text-gray-300'
                             }`}
                         />
                     </button>
@@ -74,56 +76,55 @@ export default function Navbar() {
 
                 <div 
                     ref={menuRef}
-                    className={`md:hidden fixed left-0 right-0 bg-[#0a0a0a] transition-all duration-300 ease-in-out border-b border-gray-800/30 ${
+                    className={`md:hidden fixed left-0 right-0 bg-gradient-to-b from-[#0a0a0a]/98 to-[#111827]/98 backdrop-blur-xl transition-all duration-300 ease-in-out border-b border-gray-800/30 ${
                         isMobileMenuOpen 
                             ? "opacity-100 translate-y-0" 
                             : "opacity-0 -translate-y-full pointer-events-none"
                     }`}
                 >
-                    <div className="container mx-auto px-6 py-8 space-y-2">
+                    <div className="container mx-auto px-6 py-6 space-y-3">
                         <a 
-                            href="#" 
-                            className="mobile-link group block" 
+                            href="/" 
+                            className="block group"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
-                            <div className="flex items-center p-4 rounded-2xl hover:bg-gray-800/40 transition-all duration-300 group-hover:translate-x-2">
+                            <div className="flex items-center p-4 rounded-xl bg-gradient-to-r from-transparent to-transparent hover:from-cyan-500/5 hover:to-blue-500/5 border border-transparent hover:border-cyan-500/20 transition-all duration-300 transform hover:translate-x-2">
                                 <FontAwesomeIcon 
                                     icon={faHome} 
-                                    className="w-6 h-6 mr-4 text-cyan-400" 
+                                    className="w-5 h-5 mr-4 text-cyan-400 group-hover:scale-110 transition-transform duration-300" 
                                 />
-                                <span className="text-lg font-medium tracking-wide">Home</span>
+                                <span className="text-base font-medium text-gray-300 group-hover:text-cyan-400">Home</span>
                             </div>
-                            <div className="h-[1px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                         </a>
                         
                         <a 
                             href="#projects" 
-                            className="mobile-link group block"
+                            className="block group"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
-                            <div className="flex items-center p-4 rounded-2xl hover:bg-gray-800/40 transition-all duration-300 group-hover:translate-x-2">
+                            <div className="flex items-center p-4 rounded-xl bg-gradient-to-r from-transparent to-transparent hover:from-cyan-500/5 hover:to-blue-500/5 border border-transparent hover:border-cyan-500/20 transition-all duration-300 transform hover:translate-x-2">
                                 <FontAwesomeIcon 
                                     icon={faProjectDiagram} 
-                                    className="w-6 h-6 mr-4 text-cyan-400" 
+                                    className="w-5 h-5 mr-4 text-cyan-400 group-hover:scale-110 transition-transform duration-300" 
                                 />
-                                <span className="text-lg font-medium tracking-wide">Projects</span>
+                                <span className="text-base font-medium text-gray-300 group-hover:text-cyan-400">Projetos</span>
                             </div>
-                            <div className="h-[1px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                         </a>
                         
                         <a 
-                            href="https://github.com/GeovaneSec" 
-                            className="mobile-link group block"
+                            href="https://github.com/GeovaneSec"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block group"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
-                            <div className="flex items-center p-4 rounded-2xl hover:bg-gray-800/40 transition-all duration-300 group-hover:translate-x-2">
+                            <div className="flex items-center p-4 rounded-xl bg-gradient-to-r from-transparent to-transparent hover:from-cyan-500/5 hover:to-blue-500/5 border border-transparent hover:border-cyan-500/20 transition-all duration-300 transform hover:translate-x-2">
                                 <FontAwesomeIcon 
                                     icon={faGithub} 
-                                    className="w-6 h-6 mr-4 text-cyan-400" 
+                                    className="w-5 h-5 mr-4 text-cyan-400 group-hover:scale-110 transition-transform duration-300" 
                                 />
-                                <span className="text-lg font-medium tracking-wide">GitHub</span>
+                                <span className="text-base font-medium text-gray-300 group-hover:text-cyan-400">GitHub</span>
                             </div>
-                            <div className="h-[1px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                         </a>
                     </div>
                 </div>
