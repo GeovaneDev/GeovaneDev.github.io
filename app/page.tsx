@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinux } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faExternalLinkAlt, faServer, faMusic } from '@fortawesome/free-solid-svg-icons';
 
 const projects = [
@@ -27,7 +27,7 @@ const projects = [
   {
     title: "FlexTux Bot",
     description: "Bot Discord desenvolvido com comandos de diversão, utilidades, economia e moderação para servidores.",
-    icon: faLinux,
+    icon: faDiscord,
     tags: ["Node.js", "Discord.js"],
     link: "",
     github: "https://github.com/GeovaneSec/FlexTux",
@@ -61,7 +61,7 @@ export default function HomePage() {
                   icon={faGithub} 
                   className="mr-2 sm:mr-3 w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-all duration-300" 
                 />
-                GitHub Profile
+                GitHub
               </a>
             </div>
           </div>
