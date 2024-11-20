@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-r from-[#0a0a0a] to-[#1a1a1a] text-[#e0e0e0] font-sans;
+  }
+}
+
+@layer components {
+  .mobile-link {
+    @apply block w-full transition-all duration-300;
+  }
+
+  .no-scroll {
+    @apply overflow-hidden;
+  }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
+
+.social-button {
+  @apply flex items-center px-6 py-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors duration-300 text-gray-100;
+}
+
+.btn-primary {
+  @apply px-6 py-2 bg-cyan-500 hover:bg-cyan-600 rounded-lg transition-colors duration-300 text-white font-medium;
+}
+
+.btn-secondary {
+  @apply px-6 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors duration-300 text-white font-medium;
+}
+
+.project-card {
+  @apply hover:shadow-lg hover:shadow-cyan-500/10;
+}

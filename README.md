@@ -1,27 +1,127 @@
-# Meu Site com meus Projetos
+# GeovaneSec Portfolio
 
-Bem-vindo ao repositório do meu site pessoal, um espaço dedicado a compartilhar minha jornada como desenvolvedor e apresentar meus projetos. Aqui você encontrará informações detalhadas sobre minha trajetória, experiências profissionais e os projetos nos quais estou atualmente envolvido.
+[![Next.js](https://img.shields.io/badge/Next.js-15.0.3-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.1-38B2AC)](https://tailwindcss.com/)
 
-Você pode acessar o site em https://geovanedev.me/. Convido você a explorar as diversas seções para conhecer mais sobre minha experiência e projetos como estudante de programação.
+Um portfólio profissional desenvolvido com Next.js, TypeScript e TailwindCSS, apresentando projetos self-hosted e open-source.
 
-## Sobre o Site
+## 🚀 Tecnologias
 
-Este site foi desenvolvido utilizando tecnologias web modernas para criar uma experiência interativa, informativa e visualmente atraente. A seguir, estão os principais recursos e ferramentas utilizados em sua construção:
+- [Next.js 15.0.3](https://nextjs.org/)
+- [React 19.0](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Font Awesome](https://fontawesome.com/)
 
-- **HTML5:** Utilizado para estruturar o conteúdo do site, garantindo uma base sólida e semântica.
-- **CSS:** Responsável pela estilização, layout e animações, proporcionando uma experiência visual agradável.
-- **Tailwind CSS:** Framework CSS utilizado para agilizar o desenvolvimento, oferecendo classes utilitárias que permitem um design responsivo e customizável.
-- **JavaScript:** Implementado para adicionar interatividade e funcionalidades dinâmicas ao site.
-- **GitHub Pages:** Plataforma de hospedagem gratuita que permite a publicação do site diretamente a partir do repositório GitHub.
+## 🛠️ Instalação
 
-## Explorando o Site
+1. Clone o repositório:
+```bash
+git clone https://github.com/GeovaneSec/geovanesec.github.io.git
+cd geovanesec.github.io
+```
 
-O site é organizado em seções cuidadosamente projetadas para oferecer uma visão abrangente da minha jornada como estudante de programação e dos projetos que desenvolvi. Algumas das principais seções incluem:
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
 
-- **Sobre:** Uma introdução detalhada sobre mim, minha paixão pela programação e minha busca constante por aprendizado e aperfeiçoamento.
-- **Habilidades:** Uma visão geral das tecnologias e ferramentas que domino, incluindo linguagens de programação, frameworks e metodologias de desenvolvimento.
-- **Portfólio:** Uma galeria dos meus melhores projetos, com descrições detalhadas, demonstrações interativas e links diretos para os repositórios no GitHub.
-- **Experiência:** Um resumo das minhas experiências profissionais e acadêmicas relevantes para a área de desenvolvimento.
-- **Contato:** Informações para entrar em contato comigo, incluindo links para redes sociais profissionais e formulário de contato.
+3. Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+# ou
+yarn dev
+```
 
-Sinta-se à vontade para explorar o código-fonte deste projeto e, se tiver alguma sugestão ou feedback, ficarei feliz em recebê-los!
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
+
+## 📁 Estrutura do Projeto
+
+```
+geovanesec.github.io/
+├── app/
+│   ├── layout.tsx       # Layout principal
+│   ├── page.tsx         # Página inicial
+│   ├── not-found.tsx    # Página 404
+│   └── globals.css      # Estilos globais
+├── components/
+│   ├── Navbar.tsx       # Componente de navegação
+│   └── Footer.tsx       # Componente do rodapé
+├── public/
+│   ├── sitemap.xml     # Sitemap para SEO
+│   └── robots.txt      # Configurações para crawlers
+└── package.json
+```
+
+## 🌟 Funcionalidades
+
+- Design responsivo e moderno
+- Animações suaves e interativas
+- Otimização SEO
+- Suporte a PWA
+- Navegação intuitiva
+- Modo escuro por padrão
+
+## 🚀 Deploy
+
+O site está configurado para deploy na Vercel. Para fazer o deploy:
+
+1. Faça push para o repositório principal
+2. A Vercel detectará automaticamente as mudanças
+3. O deploy será feito automaticamente
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+
+## 📧 Contato
+
+GeovaneSec - [GitHub](https://github.com/GeovaneSec)
+
+## 🌐 Projetos em Destaque
+
+### B3API
+Uma API dedicada aos dados do mercado financeiro brasileiro (B3).
+- [Demo](https://b3api.me)
+- [GitHub](https://github.com/GeovaneSec/B3API)
+- Tags: API, Finance, Data
+
+### Site para a Banda Little Dolly
+Um site desenvolvido usando HTML e CSS para apresentar e divulgar a banda.
+- [GitHub](https://github.com/bandalittledolly/Website)
+- Tags: HTML, CSS, Web
+
+### Site do FlexTux
+Um site desenvolvido usando HTML e CSS para apresentar o FlexTux. (Descontinuado)
+- [GitHub](https://github.com/FlexTux/FlexTux-Website)
+- Tags: HTML, CSS, Linux
+
+## 🛠️ Scripts Disponíveis
+
+```bash
+# Desenvolvimento
+npm run dev
+
+# Build
+npm run build
+
+# Produção
+npm run start
+
+# Linting
+npm run lint
+```
+
+## 🔧 Configuração
+
+O projeto utiliza várias tecnologias modernas e está configurado com:
+
+- TypeScript para tipagem estática
+- TailwindCSS para estilização
+- Next.js para renderização e roteamento
+- Font Awesome para ícones
+- SEO otimizado com meta tags e sitemap
