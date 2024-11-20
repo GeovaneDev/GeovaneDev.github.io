@@ -44,13 +44,6 @@ export const metadata: Metadata = {
     title: "GeovaneSec - Desenvolvedor Web | Projetos Self-Hosted e Open-Source",
     description: "Portfólio profissional de Geovane, desenvolvedor web especializado em projetos self-hosted e open-source.",
   },
-  verification: {
-    google: "google-site-verification-code",
-    yandex: "yandex-verification-code",
-    other: {
-      me: ['https://github.com/GeovaneSec']
-    }
-  }
 };
 
 export default function RootLayout({
