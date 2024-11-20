@@ -127,24 +127,26 @@ export default function HomePage() {
                   ))}
                 </div>
 
-                <div className="flex gap-3 sm:gap-4 mt-auto">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-auto">
                   {project.demoEnabled && (
                     <a 
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer" 
-                      className="flex-1 py-2.5 sm:py-3 px-4 sm:px-6 text-center rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-sm sm:text-base font-medium hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/25"
+                      className="w-full sm:flex-1 py-3 px-6 text-center rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-sm sm:text-base font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/25 active:scale-[0.98] flex items-center justify-center gap-2"
                     >
-                      Ver Site
+                      <FontAwesomeIcon icon={faExternalLinkAlt} className="w-4 h-4" />
+                      <span>Acessar o Site</span>
                     </a>
                   )}
                   <a 
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer" 
-                    className="flex-1 py-2.5 sm:py-3 px-4 sm:px-6 text-center rounded-xl bg-gradient-to-r from-gray-800/80 to-gray-900/80 text-white text-sm sm:text-base font-medium hover:from-gray-700 hover:to-gray-800 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-700/25 border border-gray-600/20"
+                    className="w-full sm:flex-1 py-3 px-6 text-center rounded-xl bg-gradient-to-r from-gray-800 to-gray-900 text-white text-sm sm:text-base font-semibold hover:from-gray-700 hover:to-gray-800 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-800/25 border border-gray-700 active:scale-[0.98] flex items-center justify-center gap-2"
                   >
-                    Ver Código Fonte
+                    <FontAwesomeIcon icon={faGithub} className="w-4 h-4" />
+                    <span>GitHub</span>
                   </a>
                 </div>
               </div>
