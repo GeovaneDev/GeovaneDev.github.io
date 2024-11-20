@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faExternalLinkAlt, faServer, faMusic } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faServer, faMusic } from '@fortawesome/free-solid-svg-icons';
 
 const projects = [
   {
